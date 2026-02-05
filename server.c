@@ -28,7 +28,7 @@ if(listen(server_fd, 3) < 0){
     perror("listen failed");
     exit(EXIT_FAILURE);
 }
-
+#testing 
 while(1){
     if((new_socket = accept(server_fd, (struct sockaddr*)&address, &addrlen)) < 0){
         perror("accept failed");
